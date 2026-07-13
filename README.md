@@ -1,60 +1,73 @@
 # 🛡️ Safe Shelter
 
-> **A comprehensive Disaster Shelter Management System** developed as a Computer Engineering Graduation Project.
+> **A Full-Stack Disaster Shelter Management System**  
+> Developed as a Computer Engineering Graduation Project.
 
-Safe Shelter is a full-stack disaster management platform designed to improve coordination between shelters, disaster victims, volunteers, and administrators during emergency situations.
+![Laravel](https://img.shields.io/badge/Laravel-11-red?style=for-the-badge&logo=laravel)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![React Native](https://img.shields.io/badge/React_Native-Expo-000020?style=for-the-badge&logo=expo)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)
 
 ---
+<p align="center">
+  <img src="assets/images/dashboard.png" width="900"/>
+</p>
 
-# 📱 System Overview
+## 📌 Project Purpose
 
-The project consists of three independent applications:
+Safe Shelter is a full-stack disaster management platform developed to improve emergency response by providing a centralized system for managing shelters, coordinating volunteers, tracking resources, and assisting disaster victims during emergency situations.
+
+The system consists of three integrated applications:
 
 - 🌐 Web Administration Panel
-- 📱 Mobile Application (React Native + Expo)
+- 📱 Mobile Application
 - ⚙️ Laravel REST API Backend
 
 ---
 
-# ✨ Key Features
+## ✨ Key Features
 
 - 🏠 Shelter Management
-- 👨‍👩‍👧 Family Card System
-- 📍 Shelter Navigation
-- 🗺️ Offline Maps
-- 📷 QR Check-in / Check-out
+- 👨‍👩‍👧 Family Card Management
+- 📷 QR Code Check-in / Check-out
+- 🗺️ Offline Map Support
+- 📍 Smart Shelter Navigation
+- 📦 Resource Monitoring
 - ❤️ Donation Management
-- 📦 Resource Tracking
-- 🚨 Emergency Requests
+- 🚨 Emergency Help Requests
 - 🔔 Notifications
 - 👥 Volunteer Coordination
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-## Backend
+### Backend
 
 - Laravel
 - PHP
 - MySQL
 - Laravel Sanctum
+- REST API
 
-## Web
+### Web
 
 - React
 - TypeScript
 - Vite
 - Tailwind CSS
+- Axios
 
-## Mobile
+### Mobile
 
 - React Native
 - Expo
+- React Navigation
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 Safe_Shelter
@@ -63,11 +76,12 @@ Safe_Shelter
 ├── web
 ├── mobile
 └── assets
+    └── images
 ```
 
 ---
 
-# 🌐 Web Screenshots
+## 🌐 Web Screenshots
 
 | Login | Dashboard |
 |--------|-----------|
@@ -83,7 +97,7 @@ Safe_Shelter
 
 ---
 
-# 📱 Mobile Screenshots
+## 📱 Mobile Screenshots
 
 | Home | Offline Map |
 |------|-------------|
@@ -99,24 +113,39 @@ Safe_Shelter
 
 ---
 
-# 🚀 Installation
+## 🌟 Highlights
 
-## Backend
+- Offline Map Support
+- QR-based Shelter Entry & Exit
+- Family Card Management
+- Resource & Donation Tracking
+- Emergency Help Requests
+- Smart Shelter Navigation
+- Responsive Web Dashboard
+- RESTful API Architecture
+
+---
+
+## 🚀 Installation
+
+### Backend
 
 ```bash
 composer install
+cp .env.example .env
+php artisan key:generate
 php artisan migrate
 php artisan serve
 ```
 
-## Web
+### Web
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Mobile
+### Mobile
 
 ```bash
 npm install
@@ -125,18 +154,22 @@ npx expo start
 
 ---
 
-# 👩‍💻 Developer
+## 👩‍💻 Developer
 
 **Iman Sabouni**
 
 Bachelor of Computer Engineering
 
-Graduation Project – 2026
-
 Istanbul Arel University
+
+Graduation Project – 2026
 
 ---
 
-# 📄 License
+## 📄 License
 
 This project was developed for educational and demonstration purposes.
+
+---
+
+⭐ If you found this project interesting, feel free to star the repository.
