@@ -11,7 +11,7 @@
 
 ---
 <p align="center">
-  <img src="assets/images/dashboard.png" width="900"/>
+  <img src="assets/images/dashboard.png" width="500"/>
 </p>
 
 ## 📌 Project Purpose
