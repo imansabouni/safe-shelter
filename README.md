@@ -65,6 +65,39 @@ The system consists of three integrated applications:
 - Expo
 - React Navigation
 
+## Offline Map Tile Generator
+
+To support offline navigation during emergency situations, the project includes a Python utility that downloads OpenStreetMap tiles for a specified geographic area.
+
+### Features
+
+- Download OpenStreetMap tiles
+- Configurable geographic bounding box
+- Multiple zoom levels
+- Automatic folder organization (`tiles/z/x/y.png`)
+- Request throttling to respect OpenStreetMap usage policy
+
+### Technologies
+
+- Python
+- Requests
+- OpenStreetMap Tile Server
+
+### Usage
+
+```bash
+pip install requests
+python scripts/download_tiles.py
+```
+
+### Output
+
+```
+tiles/
+├── 16/
+├── 17/
+└── 18/
+```
 ---
 
 ## 📂 Project Structure
